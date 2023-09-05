@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./InputForm.css";
 import Error from "./Error";
+import Wrapper from "./Helpers/Wrapper";
 
 const InputForm = (props) => {
   const [inputUsername, setInputUsername] = useState("");
@@ -52,7 +53,7 @@ const InputForm = (props) => {
   };
 
   return (
-    <>
+    <Wrapper>
       {/* if error hase then */}
       {error && (
         <Error
@@ -79,7 +80,7 @@ const InputForm = (props) => {
           <button type="submit">Add User</button>
         </div>
       </form>
-    </>
+    </Wrapper>
   );
 };
 
