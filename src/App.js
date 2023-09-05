@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { Fragment, useState } from "react";
 import "./App.css";
 import InputForm from "./components/InputForm";
 import InputList from "./components/InputList";
@@ -17,6 +17,16 @@ function App() {
       <InputForm onAddInput={AddInputToList} />
       <InputList userData={userList} />
     </div>
+
+    // <React.Fragment>
+    //   <InputForm onAddInput={AddInputToList} />
+    //   <InputList userData={userList} />
+    // </React.Fragment>
+
+    // <Fragment>
+    //   <InputForm onAddInput={AddInputToList} />
+    //   <InputList userData={userList} />
+    // </Fragment>
   );
 }
 
